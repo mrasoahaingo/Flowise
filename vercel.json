@@ -1,0 +1,18 @@
+{
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "/server/$1"
+    },
+    {
+      "src": "/*",
+      "dest": "/ui/index.html"
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/ui/$1"
+    }
+  ]
+}
